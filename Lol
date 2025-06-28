@@ -1,0 +1,4 @@
+||googlevideo.com/videoplayback$xmlhttprequest,domain=www.youtube.com,third-party
+||doubleclick.net^$xmlhttprequest,image,script,domain=www.youtube.com
+||youtube.com/api/stats/ads$xmlhttprequest,domain=www.youtube.com
+||googleadservices.com^$xmlhttprequest,script,domain=www.youtube.com
