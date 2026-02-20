@@ -146,3 +146,22 @@
 ||*/detect-adblock.js$script
 ||*/blockadblock.js$script
 ||*/fuckadblock.js$script
+! Title: Custom Pinterest & Yahoo Tracker Block
+! -----------------------------------------------
+
+! Pinterest Analytics & Tracking
+||analytics.pinterest.com^$important,third-party
+||ct.pinterest.com^$important,third-party
+||log.pinterest.com^$important,third-party
+||widgets.pinterest.com^$important,third-party
+
+! Yahoo User Data Collection (UDC) & Tracking
+||udc.yahoo.com^$important,third-party
+||analytics.yahoo.com^$important,third-party
+||geo.yahoo.com^$important,third-party
+||beap.gemini.yahoo.com^$important,third-party
+||ads.yahoo.com^$important,third-party
+
+! Combined Generic Block for these specific subdomains
+||pinterest.com/v3/get/analytics/$script,third-party
+||yahoo.com/udc/$xhr,third-party
