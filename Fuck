@@ -1,0 +1,148 @@
+[Adblock Plus 2.0]
+! Title: Custom ads.js Blocker
+! Description: Blocks ads.js and common ad delivery scripts on iOS Safari
+! Last modified: 2025
+! Homepage: https://github.com/user/custom-adblock
+
+! ——————————————————————————————
+! Block ads.js (all variations)
+! ——————————————————————————————
+||*/ads.js$script
+||*/ads.min.js$script
+||*/ads-loader.js$script
+||*/ads_loader.js$script
+||*/ad.js$script
+||*/ad.min.js$script
+||*/ad-manager.js$script
+||*/admanager.js$script
+||*/ad_manager.js$script
+||*/ad-script.js$script
+||*/adscript.js$script
+||*/ads-main.js$script
+||*/adsbygoogle.js$script
+||*/ads-async.js$script
+||*/ads.bundle.js$script
+
+! ——————————————————————————————
+! Google Ads / AdSense / GPT
+! ——————————————————————————————
+||pagead2.googlesyndication.com^$third-party
+||googleads.g.doubleclick.net^$third-party
+||securepubads.g.doubleclick.net^$third-party
+||adservice.google.com^$third-party
+||www.googleadservices.com^$third-party
+||google.com/adsense/$third-party
+||tpc.googlesyndication.com^$third-party
+||googletagservices.com/tag/js/gpt.js$script
+||fundingchoicesmessages.google.com^$third-party
+
+! ——————————————————————————————
+! Common Ad Networks
+! ——————————————————————————————
+||doubleclick.net^$third-party
+||ad.doubleclick.net^$third-party
+||ads.yahoo.com^$third-party
+||advertising.com^$third-party
+||adnxs.com^$third-party
+||adsrvr.org^$third-party
+||adroll.com^$third-party
+||outbrain.com/outbrain.js$script
+||cdn.taboola.com^$third-party
+||amazon-adsystem.com^$third-party
+||media.net/dmedianet.js$script
+||moatads.com^$third-party
+||zedo.com^$third-party
+||criteo.com^$third-party
+||pubmatic.com^$third-party
+||rubiconproject.com^$third-party
+||openx.net^$third-party
+||contextweb.com^$third-party
+||33across.com^$third-party
+||sharethrough.com^$third-party
+||indexww.com^$third-party
+||casalemedia.com^$third-party
+||smartadserver.com^$third-party
+||yieldmo.com^$third-party
+||teads.tv^$third-party
+||bidswitch.net^$third-party
+||lijit.com^$third-party
+
+! ——————————————————————————————
+! Generic ad paths / patterns
+! ——————————————————————————————
+||*/prebid.js$script
+||*/prebid.min.js$script
+||*/header-bidding.js$script
+||*/headerbid.js$script
+||*/dfp.js$script
+||*/gpt-ad*.js$script
+||*/adsense*.js$script
+||*/advert.js$script
+||*/advertisement.js$script
+||*/show_ads.js$script
+||*/show-ads.js$script
+||*/showads.js$script
+||*/ad-banner.js$script
+||*/ad_banner.js$script
+||*/ad-slot.js$script
+||*/ad-config.js$script
+||*/ad-init.js$script
+||*/ad-tracking.js$script
+||*/ad-display.js$script
+||*/ad-refresh.js$script
+||*/ad-render.js$script
+||*/ad-placement.js$script
+||*/native-ad.js$script
+||*/sticky-ad.js$script
+||*/interstitial-ad.js$script
+||*/ad-overlay.js$script
+||*/popunder.js$script
+||*/popup-ad.js$script
+||*/preroll-ad.js$script
+
+! ——————————————————————————————
+! Ad containers / elements (cosmetic)
+! ——————————————————————————————
+##div[id^="ad-"]
+##div[id^="ad_"]
+##div[class^="ad-"]
+##div[class^="ad_"]
+##div[id*="google_ads"]
+##div[id*="AdSlot"]
+##div[class*="adsbygoogle"]
+##div[class*="ad-container"]
+##div[class*="ad-wrapper"]
+##div[class*="ad-banner"]
+##div[class*="advertisement"]
+##div[data-ad]
+##div[data-ad-slot]
+##div[data-ad-unit]
+##ins.adsbygoogle
+##iframe[src*="doubleclick"]
+##iframe[src*="googlesyndication"]
+##iframe[id^="google_ads"]
+##aside[id*="ad"]
+##section[class*="sponsored"]
+##div[class*="sponsored-content"]
+
+! ——————————————————————————————
+! Tracking / Analytics tied to ads
+! ——————————————————————————————
+||pixel.adsafeprotected.com^$third-party
+||cdn.adsafeprotected.com^$third-party
+||static.adsafeprotected.com^$third-party
+||dt.adsafeprotected.com^$third-party
+||ib.adnxs.com^$third-party
+||pixel.advertising.com^$third-party
+||t.co/i/adsct$third-party
+||analytics.twitter.com/i/adsct$third-party
+||bat.bing.com^$third-party
+
+! ——————————————————————————————
+! Anti-adblock detection bypass
+! ——————————————————————————————
+||*/anti-adblock.js$script
+||*/adblock-detect.js$script
+||*/detect-adblock.js$script
+||*/blockadblock.js$script
+||*/fuckadblock.js$script
